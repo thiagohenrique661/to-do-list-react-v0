@@ -1,0 +1,239 @@
+body {
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    min-height: 100vh;
+    /* min-width: 100vw; */
+}
+
+.app-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #272727;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+
+ul li {
+    width: 720px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    text-align: start;
+    /* flex-wrap: wrap; */
+    /* word-wrap: break-word; */
+}
+
+.btn-task {
+    background-color: #b10c43;
+    width: 600px;
+    background: transparent;
+    color: #fff;
+    text-align: start;
+    border: transparent;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.icon-right {
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+.completed-text {
+
+    text-decoration: line-through;
+}
+
+.btn-task,
+.icon-right {
+    background-color: #b10c43;
+}
+
+.btn-task:focus,
+.icon-right:focus,
+.btn-back:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputAddTask,
+.inputDescriptionTask {
+    width: 700px;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.inputAddTask,
+.inputDescriptionTask:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-AddTask {
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+    width: 700px;
+    height: 50px;
+    background-color: #bddeff;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.container-principal-detailTask {
+    min-height: 500px;
+    width: 500px;
+    background: #272727;
+    padding: 20px;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.content-description {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.btn-back {
+    border: none;
+    background: transparent;
+    background-color: #b10c43;
+    height: 50px;
+    font-size: 24px;
+    position: relative;
+    left: 85%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    color: #fff;
+}
+
+.content-description {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .inputAddTask {
+        width: 350px;
+        height: 30px;
+    }
+
+    .btn-AddTask {
+        width: 200px;
+        height: 40px;
+    }
+
+    .btn-task {
+        width: 350px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .icon-right {
+        height: 45px;
+        font-size: 16px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    ul li {
+        width: 300px;
+        height: 45px;
+        font-size: 16px;
+
+    }
+
+    .content-description {
+        margin-left: 60px;
+    }
+
+    /* .title-detailTask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+@media screen and (min-width: 601px) and (max-width: 760px) {
+    .inputAddTask {
+        width: 500px;
+        height: 40px;
+    }
+
+    .btn-AddTask {
+        width: 300px;
+        height: 40px;
+    }
+
+    .btn-task {
+        width: 500px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .icon-right {
+        height: 45px;
+        font-size: 16px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    ul li {
+        width: 500px;
+        height: 45px;
+        font-size: 16px;
+
+    }
+}
