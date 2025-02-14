@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="title">TASK MANAGER</h1>
+      <h1 className="title-manager">TASK MANAGER</h1>
       <AddTasks addNewTask={addNewTask} />
       <ListTasks
         propsTasks={tasks}
