@@ -192,11 +192,15 @@ ul li {
         margin-left: 60px;
     }
 
-    /* .title-detailTask {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
+    .container-principal-detailTask h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .btn-back {
+        left: 70%;
+
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 760px) {
@@ -234,6 +238,11 @@ ul li {
         width: 500px;
         height: 45px;
         font-size: 16px;
+
+    }
+
+    .btn-back {
+        left: 70%;
 
     }
 }
